@@ -26,7 +26,7 @@ public class Main {
 			System.out.println("Escribe una funcion signo");
 			System.out.println(signo(-0));
 			break;
-		
+			
 		case 4:
 			System.out.println("Escribe una funcion max");
 			System.out.println(max(1, 9));
@@ -34,6 +34,11 @@ public class Main {
 		case 5:
 			System.out.println("Escribe una funcion area triangulo que te calcule el area de un triangulo y se le pasa por parametros la base y la altura");
 			System.out.println(areaTriangulo(2, 4));
+			break;
+			
+		case 18:
+			System.out.println("Escribe una funcion area triangulo que te calcule el area de un triangulo y se le pasa por parametros la base y la altura");
+			Ejercicio18();
 			break;
 			
 		default: 
@@ -89,5 +94,41 @@ public class Main {
 			
 			return multiplicacion;
 	}
+		public static void Ejercicio18() throws NumberFormatException, IOException {
+			BufferedReader br = new BufferedReader(new InputStreamReader(System.in));	
+		
+		
+			String Opciones = br.readLine();
+			switch (Opciones) {
+			
+			case "a":
+				int n1 = 0;
+				for (int i = 0;i<100;i++) {	
+				System.out.println(n1*11);
+				n1++;
+				}
+				
+			break;
+
+			case "b":
+				int n2 = 0;
+				for (int i = 0;i<100;i++) {	
+					System.out.println(n2*17);
+					n2++;
+				}
+				
+				
+			break;
+
+			case "c":
+				int n3 = 0;
+				for (int i = 0;i<100;i++) {	
+					System.out.println(n3*23);
+					n3++;
+				}
+
+			break;
+			}
+		}
 	
 }
